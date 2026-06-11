@@ -1,0 +1,15 @@
+# config.yaml
+config:
+  task: segmentation
+  dataset_id: thalamus821
+  model: segresnet
+  run_label: test
+  num_folds: 5
+  train_params: 
+    num_epochs_per_validation: 1
+    num_epochs: 20
+    num_warmup_epochs: 1
+paths:
+  # I created my own custom parsing function that converts PWD 
+  dataset_home: "${oc.env:CWD}/data"
+  work_home: "${oc.env:CWD}/training_work_dirs"

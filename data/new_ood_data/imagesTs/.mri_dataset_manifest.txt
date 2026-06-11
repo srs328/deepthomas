@@ -1,0 +1,10 @@
+MRI Folder Manifest: /home/srs-9/Projects/saranathan/kira_share/deepthomas/data/new_inference/imagesTs
+Total NIfTI Files: 1
+============================================================
+
+File: crop_Anon_3DT1_preMGH_Pre_Sag_T1_MPRAGE_130011_2.nii.gz
+  - Size: 3.25 MB
+  - Dimensions (Shape): (110, 124, 73)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.90000004), np.float32(0.9375), np.float32(0.9375))
+  - Data Type: float32
+----------------------------------------

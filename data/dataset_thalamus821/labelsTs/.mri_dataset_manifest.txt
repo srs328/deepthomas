@@ -1,0 +1,370 @@
+MRI Folder Manifest: /home/srs-9/Projects/saranathan/kira_share/deepthomas/data/dataset_thalamus821/labelsTs
+Total NIfTI Files: 61
+============================================================
+
+File: 102614.nii.gz
+  - Size: 0.04 MB
+  - Dimensions (Shape): (144, 191, 106)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.7), np.float32(0.7))
+  - Data Type: float32
+----------------------------------------
+File: 105923.nii.gz
+  - Size: 0.04 MB
+  - Dimensions (Shape): (144, 183, 102)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.7), np.float32(0.7))
+  - Data Type: float32
+----------------------------------------
+File: 108121.nii.gz
+  - Size: 0.04 MB
+  - Dimensions (Shape): (136, 179, 99)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.7), np.float32(0.7))
+  - Data Type: float32
+----------------------------------------
+File: 108828.nii.gz
+  - Size: 0.04 MB
+  - Dimensions (Shape): (145, 189, 104)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.7), np.float32(0.7))
+  - Data Type: float32
+----------------------------------------
+File: 111211.nii.gz
+  - Size: 0.04 MB
+  - Dimensions (Shape): (143, 183, 108)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.7), np.float32(0.7))
+  - Data Type: float32
+----------------------------------------
+File: 111413.nii.gz
+  - Size: 0.04 MB
+  - Dimensions (Shape): (146, 194, 104)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.7), np.float32(0.7))
+  - Data Type: float32
+----------------------------------------
+File: 118831.nii.gz
+  - Size: 0.04 MB
+  - Dimensions (Shape): (143, 184, 102)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.7), np.float32(0.7))
+  - Data Type: float32
+----------------------------------------
+File: 128127.nii.gz
+  - Size: 0.04 MB
+  - Dimensions (Shape): (139, 185, 104)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.7), np.float32(0.7))
+  - Data Type: float32
+----------------------------------------
+File: 129634.nii.gz
+  - Size: 0.04 MB
+  - Dimensions (Shape): (142, 188, 105)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.7), np.float32(0.7))
+  - Data Type: float32
+----------------------------------------
+File: 131419.nii.gz
+  - Size: 0.04 MB
+  - Dimensions (Shape): (133, 175, 105)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.7), np.float32(0.7))
+  - Data Type: float32
+----------------------------------------
+File: 133625.nii.gz
+  - Size: 0.04 MB
+  - Dimensions (Shape): (145, 194, 108)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.7), np.float32(0.7))
+  - Data Type: float32
+----------------------------------------
+File: 145834.nii.gz
+  - Size: 0.04 MB
+  - Dimensions (Shape): (139, 185, 104)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.7), np.float32(0.7))
+  - Data Type: float32
+----------------------------------------
+File: 148335.nii.gz
+  - Size: 0.04 MB
+  - Dimensions (Shape): (149, 182, 107)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.7), np.float32(0.7))
+  - Data Type: float32
+----------------------------------------
+File: 150928.nii.gz
+  - Size: 0.04 MB
+  - Dimensions (Shape): (142, 190, 97)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.7), np.float32(0.7))
+  - Data Type: float32
+----------------------------------------
+File: 153025.nii.gz
+  - Size: 0.04 MB
+  - Dimensions (Shape): (135, 183, 105)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.7), np.float32(0.7))
+  - Data Type: float32
+----------------------------------------
+File: 154229.nii.gz
+  - Size: 0.04 MB
+  - Dimensions (Shape): (137, 175, 101)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.7), np.float32(0.7))
+  - Data Type: float32
+----------------------------------------
+File: 154532.nii.gz
+  - Size: 0.05 MB
+  - Dimensions (Shape): (134, 201, 110)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.7), np.float32(0.7))
+  - Data Type: float32
+----------------------------------------
+File: 1_S_0001.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (112, 137, 70)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: float32
+----------------------------------------
+File: 1_S_0002.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (109, 131, 68)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: float32
+----------------------------------------
+File: 1_S_0005.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (109, 135, 72)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: float32
+----------------------------------------
+File: 1_S_0007.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (112, 125, 71)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: float32
+----------------------------------------
+File: 1_S_0009.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (106, 121, 70)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: float32
+----------------------------------------
+File: 1_S_0031.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (103, 128, 68)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: float32
+----------------------------------------
+File: 1_S_0032.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (108, 143, 81)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: float32
+----------------------------------------
+File: 1_S_0034.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (103, 130, 67)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: float32
+----------------------------------------
+File: 1_S_0035.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (106, 128, 73)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: float32
+----------------------------------------
+File: 1_S_0038.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (108, 124, 66)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: float32
+----------------------------------------
+File: 1_S_0039.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (116, 136, 75)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: float32
+----------------------------------------
+File: 1_S_0041.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (111, 129, 76)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: float32
+----------------------------------------
+File: CTRL026.nii.gz
+  - Size: 0.04 MB
+  - Dimensions (Shape): (144, 176, 92)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.6845238), np.float32(0.6845238), np.float32(0.7))
+  - Data Type: float32
+----------------------------------------
+File: CTRL027.nii.gz
+  - Size: 0.05 MB
+  - Dimensions (Shape): (155, 195, 100)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.6845238), np.float32(0.6845238), np.float32(0.7))
+  - Data Type: float32
+----------------------------------------
+File: CTRL028.nii.gz
+  - Size: 0.04 MB
+  - Dimensions (Shape): (143, 189, 100)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.6845238), np.float32(0.6845238), np.float32(0.7))
+  - Data Type: float32
+----------------------------------------
+File: CTRL045.nii.gz
+  - Size: 0.04 MB
+  - Dimensions (Shape): (151, 182, 99)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.6845238), np.float32(0.6845238), np.float32(0.7))
+  - Data Type: float32
+----------------------------------------
+File: LAB_S00043.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (135, 92, 126)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7031), np.float32(0.7031), np.float32(0.9999979))
+  - Data Type: float32
+----------------------------------------
+File: LAB_S00057.nii.gz
+  - Size: 0.03 MB
+  - Dimensions (Shape): (152, 100, 130)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7031), np.float32(0.7031), np.float32(1.0))
+  - Data Type: float32
+----------------------------------------
+File: LAB_S00217.nii.gz
+  - Size: 0.03 MB
+  - Dimensions (Shape): (150, 101, 142)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7031), np.float32(0.7031), np.float32(1.0))
+  - Data Type: float32
+----------------------------------------
+File: LAB_S00435.nii.gz
+  - Size: 0.03 MB
+  - Dimensions (Shape): (153, 111, 131)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7031), np.float32(0.7031), np.float32(1.0000008))
+  - Data Type: float32
+----------------------------------------
+File: LAB_S00439.nii.gz
+  - Size: 0.03 MB
+  - Dimensions (Shape): (155, 110, 139)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7031), np.float32(0.7031), np.float32(1.0))
+  - Data Type: float32
+----------------------------------------
+File: LAB_S00479.nii.gz
+  - Size: 0.03 MB
+  - Dimensions (Shape): (138, 118, 134)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7031), np.float32(0.7031), np.float32(1.0))
+  - Data Type: float32
+----------------------------------------
+File: LAB_S01731.nii.gz
+  - Size: 0.03 MB
+  - Dimensions (Shape): (157, 91, 136)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7031), np.float32(0.7031), np.float32(1.0))
+  - Data Type: float32
+----------------------------------------
+File: S01092.nii.gz
+  - Size: 0.03 MB
+  - Dimensions (Shape): (143, 106, 141)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7031), np.float32(0.7031), np.float32(1.0))
+  - Data Type: float32
+----------------------------------------
+File: S01122.nii.gz
+  - Size: 0.03 MB
+  - Dimensions (Shape): (147, 121, 139)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7031), np.float32(0.7031), np.float32(1.0))
+  - Data Type: float32
+----------------------------------------
+File: S01187.nii.gz
+  - Size: 0.03 MB
+  - Dimensions (Shape): (151, 124, 144)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7031), np.float32(0.7031), np.float32(1.0))
+  - Data Type: float32
+----------------------------------------
+File: case1.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (117, 143, 76)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: float32
+----------------------------------------
+File: case10.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (115, 139, 75)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: float32
+----------------------------------------
+File: case11.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (116, 141, 66)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: float32
+----------------------------------------
+File: r01-sub1.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (104, 140, 90)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: float32
+----------------------------------------
+File: r01-sub10.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (104, 138, 69)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: float32
+----------------------------------------
+File: r01-sub11.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (103, 138, 80)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: float32
+----------------------------------------
+File: r01-sub12.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (110, 133, 74)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: float32
+----------------------------------------
+File: r01-sub13.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (104, 134, 97)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: float32
+----------------------------------------
+File: sub-0051.nii.gz
+  - Size: 0.05 MB
+  - Dimensions (Shape): (153, 211, 129)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.641), np.float32(0.641))
+  - Data Type: float32
+----------------------------------------
+File: sub-0052.nii.gz
+  - Size: 0.05 MB
+  - Dimensions (Shape): (146, 215, 148)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.641), np.float32(0.641))
+  - Data Type: float32
+----------------------------------------
+File: sub-0053.nii.gz
+  - Size: 0.06 MB
+  - Dimensions (Shape): (151, 229, 161)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.641), np.float32(0.641))
+  - Data Type: float32
+----------------------------------------
+File: sub-0054.nii.gz
+  - Size: 0.06 MB
+  - Dimensions (Shape): (155, 216, 131)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.641), np.float32(0.641))
+  - Data Type: float32
+----------------------------------------
+File: sub-0055.nii.gz
+  - Size: 0.06 MB
+  - Dimensions (Shape): (160, 215, 117)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.641), np.float32(0.641))
+  - Data Type: float32
+----------------------------------------
+File: sub-0056.nii.gz
+  - Size: 0.05 MB
+  - Dimensions (Shape): (158, 210, 100)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.641), np.float32(0.641))
+  - Data Type: float32
+----------------------------------------
+File: sub-0057.nii.gz
+  - Size: 0.05 MB
+  - Dimensions (Shape): (146, 212, 128)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.641), np.float32(0.641))
+  - Data Type: float32
+----------------------------------------
+File: sub-0058.nii.gz
+  - Size: 0.05 MB
+  - Dimensions (Shape): (149, 213, 122)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.641), np.float32(0.641))
+  - Data Type: float32
+----------------------------------------
+File: sub-0059.nii.gz
+  - Size: 0.06 MB
+  - Dimensions (Shape): (149, 215, 133)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.641), np.float32(0.641))
+  - Data Type: float32
+----------------------------------------
+File: sub-0060.nii.gz
+  - Size: 0.04 MB
+  - Dimensions (Shape): (148, 198, 93)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.641), np.float32(0.641))
+  - Data Type: float32
+----------------------------------------
