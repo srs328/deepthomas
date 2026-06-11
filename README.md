@@ -21,6 +21,8 @@ deepthomas/
 │       └── imagesTs/
 ├── training_work_dirs/
 │   └── segment_thalamus821_segresnet_main/
+├── scratch/
+│   └── random_crap (till I feel comfortable to delete)
 └── utils
     └── summarize_datta.py
 ```
