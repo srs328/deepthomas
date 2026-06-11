@@ -61,7 +61,7 @@ pip install -r requirements.txt
 
 ## 2. Check the data layout
 
-The dataset folder should look like this:
+The dataset folder should look similar to this:
 
 ```text
 data/dataset_thalamus821/
@@ -92,7 +92,23 @@ The script checks that each label has a matching image before training starts.
 
 ---
 
-## Running inference with the original model
+## 3. Working Scripts
+
+The python scripts `run_auto3dseg.py` and `run_inference.py` are working as I intend them to
+
+- `run_auto3dseg.py` runs the whole auto3dseg pipeline
+- `run_inference.py` performs inference on new data using models trained using `run_auto3dseg.py`
+- `train_deepthomas.py` is supposed to be a full fledged CLI that can handle both of the above. It's not usable yet but I'll finish it soon
+  - Most of the documentation below is related to running train_deepthomas.py
+
+Until `train_deepthomas.py` is finished, you can ignore everything below. To run the working scripts:
+
+```python
+python run_auto3dseg.py
+python run_inference.py 
+```
+
+### 3.1 Running inference with the original model
 
 Running inference on new images only requires the `imagesTs` folder under a dataset folder in `data/` (e.g. `data/new_ood_data/imagesTs`). Image file naming can be more freeform here (i.e. `case_name_0000` is not enforced)
 If new images are added to:
@@ -127,7 +143,7 @@ case_name_0000.nii.gz
 
 ---
 
-## 3. Run the first test training job
+## 4. Run the first test training job
 
 The default config is intentionally called `config_test.yaml`. It is meant for a
 short first run so you can make sure the code, data paths, and MONAI setup work.
@@ -161,7 +177,7 @@ data/dataset_thalamus821/labelsTs_segresnet_test/
 
 ---
 
-## 4. Make or remake the datalist
+## 5. Make or remake the datalist
 
 MONAI uses a file called `datalist.json` to know where the images and labels are.
 The training script creates this automatically.
