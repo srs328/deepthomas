@@ -8,7 +8,6 @@ this file. The folder should also contain:
     data/dataset_thalamus821/imagesTr/
     data/dataset_thalamus821/labelsTr/
     data/dataset_thalamus821/imagesTs/
-    training_work_dirs/segment_thalamus821_segresnet_orig/  # optional
 
 The default command runs a short test training run using the settings in
 configs/config_test.yaml.
@@ -60,9 +59,9 @@ CONFIG_FILE = "config_test.yaml"
 # means the same cases will be assigned to the same folds each time.
 RANDOM_SEED = 42
 
-# This is the name of the copied official/original DeepTHOMAS model directory.
-# It is used only when running inference with --use-original-model.
-ORIGINAL_MODEL_WORK_DIR_NAME = "segment_thalamus821_segresnet_orig"
+# This is the name of the copied official DeepTHOMAS model directory.
+# It is used only when running inference with --use-main-model.
+MAIN_MODEL_WORK_DIR_NAME = "segment_thalamus821_segresnet_main"
 
 # Set this to True if you want MONAI to print detailed package/environment info.
 PRINT_MONAI_CONFIG = False
@@ -131,7 +130,12 @@ def run_inference(config: dict[str, Any], paths: dict[str, Path]) -> None:
     segmentation labels without retraining the model.
     """
 
-    datalist_file = create_datalist(config, paths)
+    datalist_file = create_datalist(
+        config, 
+        paths,
+        datalist_filename="inference-datalist.json",
+        force_recreate=True
+    )
     work_dir = paths["work_dir"]
     save_dir = paths["labelsTs_infer_dir"]
     save_dir.mkdir(parents=True, exist_ok=True)
@@ -183,6 +187,7 @@ def create_datalist(
     config: dict[str, Any],
     paths: dict[str, Path],
     force_recreate: bool = False,
+    datalist_filename: str = "datalist.json"
 ) -> Path:
     """Create datalist.json for MONAI Auto3DSeg.
 
@@ -197,7 +202,7 @@ def create_datalist(
     """
 
     work_dir = paths["work_dir"]
-    datalist_file = work_dir / "datalist.json"
+    datalist_file = work_dir / datalist_filename
 
     if datalist_file.exists() and not force_recreate:
         print(f"datalist.json already exists: {datalist_file}")
@@ -332,14 +337,14 @@ def read_config(config_file: Path | str) -> tuple[dict[str, Any], dict[str, Path
         "dataset_home": dataset_home,
         "work_home": work_home,
         "work_dir": work_home / training_run_name,
-        "original_model_work_dir": work_home / ORIGINAL_MODEL_WORK_DIR_NAME,
+        "main_model_work_dir": work_home / MAIN_MODEL_WORK_DIR_NAME,
         "dataroot": dataroot,
         "imagesTr_dir": dataroot / "imagesTr",
         "labelsTr_dir": dataroot / "labelsTr",
         "imagesTs_dir": dataroot / "imagesTs",
         "labelsTs_dir": dataroot / "labelsTs",
         "labelsTs_infer_dir": dataroot / f"labelsTs_{config['model']}_{config['run_label']}",
-        "labelsTs_orig_infer_dir": dataroot / f"labelsTs_{config['model']}_orig",
+        "labelsTs_main_infer_dir": dataroot / f"labelsTs_{config['model']}_main",
     }
 
     paths["work_dir"].mkdir(parents=True, exist_ok=True)
@@ -405,11 +410,11 @@ def build_arg_parser() -> argparse.ArgumentParser:
     )
 
     parser.add_argument(
-        "--use-original-model",
+        "--use-main-model",
         action="store_true",
         help=(
             "For inference, use training_work_dirs/"
-            f"{ORIGINAL_MODEL_WORK_DIR_NAME} instead of the test run."
+            f"{MAIN_MODEL_WORK_DIR_NAME} instead of the test run."
         ),
     )
 
@@ -428,9 +433,9 @@ def main() -> None:
     config_file = CONFIG_DIR / CONFIG_FILE
     config, paths = read_config(config_file)
 
-    if args.use_original_model:
-        paths["work_dir"] = paths["original_model_work_dir"]
-        paths["labelsTs_infer_dir"] = paths["labelsTs_orig_infer_dir"]
+    if args.use_main_model:
+        paths["work_dir"] = paths["main_model_work_dir"]
+        paths["labelsTs_infer_dir"] = paths["labelsTs_main_infer_dir"]
 
     if args.command == "make-datalist":
         create_datalist(config, paths, force_recreate=args.force_datalist)
