@@ -1,4 +1,4 @@
-MRI Folder Manifest: /home/srs-9/Projects/saranathan/kira_share/deepthomas/data/new_inference/imagesTs
+MRI Folder Manifest: /home/srs-9/Projects/saranathan/kira_share/deepthomas/data/new_ood_data/imagesTs
 Total NIfTI Files: 1
 ============================================================
 

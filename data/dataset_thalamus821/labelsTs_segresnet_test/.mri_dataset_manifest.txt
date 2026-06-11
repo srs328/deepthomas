@@ -1,4 +1,4 @@
-MRI Folder Manifest: /home/srs-9/Projects/saranathan/kira_share/deepthomas/data/dataset_thalamus821/labelsTs_infer
+MRI Folder Manifest: /home/srs-9/Projects/saranathan/kira_share/deepthomas/data/dataset_thalamus821/labelsTs_segresnet_test
 Total NIfTI Files: 61
 ============================================================
 

@@ -1,0 +1,375 @@
+MONAI Auto3Dseg Bundle Summary: segmentation_thalamus821_segresnet_test
+Path: /home/srs-9/Projects/saranathan/kira_share/deepthomas/training_work_dirs/segmentation_thalamus821_segresnet_test
+============================================================
+
+--- INTERNAL DIRECTORY TREE ---
+[D] segmentation_thalamus821_segresnet_test/
+    ├── [File] cache.yaml
+    ├── [File] datalist.json
+    ├── [File] datastats.yaml
+    ├── [File] datastats_by_case.yaml
+    ├── [File] input.yaml
+    [D] segresnet_3/
+        ├── [File] __init__.py
+        [D] __pycache__/
+        [D] docs/
+            ├── [File] README.md
+        [D] scripts/
+            ├── [File] __init__.py
+            ├── [File] algo.py
+            ├── [File] infer.py
+            ├── [File] segmenter.py
+            ├── [File] train.py
+            ├── [File] utils.py
+            ├── [File] validate.py
+            [D] __pycache__/
+        [D] model/
+            ├── [File] progress.yaml
+            [D] mlruns/
+                [D] .trash/
+                [D] 363275139369804817/
+                    ├── [File] meta.yaml
+                    [D] e7868356d2894d6985ddd1f18229ff85/
+                        ├── [File] meta.yaml
+                        [D] tags/
+                        [D] artifacts/
+                        [D] params/
+                        [D] metrics/
+                            [D] val/
+                            [D] val_class/
+                            [D] train/
+                [D] 0/
+                    ├── [File] meta.yaml
+        [D] configs/
+            ├── [File] hyper_parameters.yaml
+    [D] segresnet_2/
+        ├── [File] __init__.py
+        [D] __pycache__/
+        [D] docs/
+            ├── [File] README.md
+        [D] scripts/
+            ├── [File] __init__.py
+            ├── [File] algo.py
+            ├── [File] infer.py
+            ├── [File] segmenter.py
+            ├── [File] train.py
+            ├── [File] utils.py
+            ├── [File] validate.py
+            [D] __pycache__/
+        [D] model/
+            ├── [File] progress.yaml
+            [D] mlruns/
+                [D] 120681360772721002/
+                    ├── [File] meta.yaml
+                    [D] 215fd1683c514f59a3fd41f8138669f4/
+                        ├── [File] meta.yaml
+                        [D] tags/
+                        [D] artifacts/
+                        [D] params/
+                        [D] metrics/
+                            [D] val/
+                            [D] val_class/
+                            [D] train/
+                [D] .trash/
+                [D] 0/
+                    ├── [File] meta.yaml
+        [D] configs/
+            ├── [File] hyper_parameters.yaml
+    [D] segresnet_4/
+        ├── [File] __init__.py
+        [D] __pycache__/
+        [D] docs/
+            ├── [File] README.md
+        [D] scripts/
+            ├── [File] __init__.py
+            ├── [File] algo.py
+            ├── [File] infer.py
+            ├── [File] segmenter.py
+            ├── [File] train.py
+            ├── [File] utils.py
+            ├── [File] validate.py
+            [D] __pycache__/
+        [D] model/
+            ├── [File] progress.yaml
+            [D] mlruns/
+                [D] .trash/
+                [D] 609267487795769167/
+                    ├── [File] meta.yaml
+                    [D] f80f88cde09646959bd3a6e1210adf46/
+                        ├── [File] meta.yaml
+                        [D] tags/
+                        [D] artifacts/
+                        [D] params/
+                        [D] metrics/
+                            [D] val/
+                            [D] val_class/
+                            [D] train/
+                [D] 0/
+                    ├── [File] meta.yaml
+        [D] configs/
+            ├── [File] hyper_parameters.yaml
+    [D] segresnet_1/
+        ├── [File] __init__.py
+        [D] __pycache__/
+        [D] docs/
+            ├── [File] README.md
+        [D] scripts/
+            ├── [File] __init__.py
+            ├── [File] algo.py
+            ├── [File] infer.py
+            ├── [File] segmenter.py
+            ├── [File] train.py
+            ├── [File] utils.py
+            ├── [File] validate.py
+            [D] __pycache__/
+        [D] model/
+            ├── [File] progress.yaml
+            [D] mlruns/
+                [D] .trash/
+                [D] 0/
+                    ├── [File] meta.yaml
+                [D] 111981617731962238/
+                    ├── [File] meta.yaml
+                    [D] 5b4149dc981b4b288fd3d7bea59497d6/
+                        ├── [File] meta.yaml
+                        [D] tags/
+                        [D] artifacts/
+                        [D] params/
+                        [D] metrics/
+                            [D] val/
+                            [D] val_class/
+                            [D] train/
+        [D] configs/
+            ├── [File] hyper_parameters.yaml
+    [D] segresnet_0/
+        ├── [File] __init__.py
+        [D] __pycache__/
+        [D] docs/
+            ├── [File] README.md
+        [D] scripts/
+            ├── [File] __init__.py
+            ├── [File] algo.py
+            ├── [File] infer.py
+            ├── [File] segmenter.py
+            ├── [File] train.py
+            ├── [File] utils.py
+            ├── [File] validate.py
+            [D] __pycache__/
+        [D] model/
+            ├── [File] progress.yaml
+            [D] mlruns/
+                [D] .trash/
+                [D] 334804129649520871/
+                    ├── [File] meta.yaml
+                    [D] 9aa683b0dd7d4799ae8c8183cd2f609f/
+                        ├── [File] meta.yaml
+                        [D] tags/
+                        [D] artifacts/
+                        [D] params/
+                        [D] metrics/
+                            [D] val/
+                            [D] val_class/
+                            [D] train/
+                [D] 0/
+                    ├── [File] meta.yaml
+        [D] configs/
+            ├── [File] hyper_parameters.yaml
+    [D] algorithm_templates/
+        [D] dints/
+            ├── [File] __init__.py
+            [D] docs/
+                ├── [File] README.md
+            [D] scripts/
+                ├── [File] __init__.py
+                ├── [File] algo.py
+                ├── [File] dummy_runner.py
+                ├── [File] infer.py
+                ├── [File] search.py
+                ├── [File] train.py
+                ├── [File] utils.py
+                ├── [File] validate.py
+            [D] configs/
+                ├── [File] hyper_parameters.yaml
+                ├── [File] hyper_parameters_search.yaml
+                ├── [File] network.yaml
+                ├── [File] network_search.yaml
+                ├── [File] transforms_infer.yaml
+                ├── [File] transforms_train.yaml
+                ├── [File] transforms_validate.yaml
+        [D] swinunetr/
+            ├── [File] __init__.py
+            [D] docs/
+                ├── [File] README.md
+            [D] scripts/
+                ├── [File] __init__.py
+                ├── [File] algo.py
+                ├── [File] dummy_runner.py
+                ├── [File] infer.py
+                ├── [File] train.py
+                ├── [File] validate.py
+            [D] configs/
+                ├── [File] hyper_parameters.yaml
+                ├── [File] network.yaml
+                ├── [File] transforms_infer.yaml
+                ├── [File] transforms_train.yaml
+                ├── [File] transforms_validate.yaml
+        [D] segresnet2d/
+            ├── [File] __init__.py
+            [D] docs/
+                ├── [File] README.md
+            [D] scripts/
+                ├── [File] __init__.py
+                ├── [File] algo.py
+                ├── [File] infer.py
+                ├── [File] segmenter.py
+                ├── [File] segmenter_2d.py
+                ├── [File] train.py
+                ├── [File] utils.py
+                ├── [File] validate.py
+            [D] configs/
+                ├── [File] hyper_parameters.yaml
+        [D] segresnet/
+            ├── [File] __init__.py
+            [D] __pycache__/
+            [D] docs/
+                ├── [File] README.md
+            [D] scripts/
+                ├── [File] __init__.py
+                ├── [File] algo.py
+                ├── [File] infer.py
+                ├── [File] segmenter.py
+                ├── [File] train.py
+                ├── [File] utils.py
+                ├── [File] validate.py
+                [D] __pycache__/
+            [D] configs/
+                ├── [File] hyper_parameters.yaml
+
+============================================================
+--- KEY TRAINING CONFIGURATIONS & SCRIPTS ---
+- cache.yaml
+- datalist.json
+- datastats.yaml
+- datastats_by_case.yaml
+- input.yaml
+- segresnet_3/__init__.py
+- segresnet_3/docs/README.md
+- segresnet_3/scripts/__init__.py
+- segresnet_3/scripts/algo.py
+- segresnet_3/scripts/infer.py
+- segresnet_3/scripts/segmenter.py
+- segresnet_3/scripts/train.py
+- segresnet_3/scripts/utils.py
+- segresnet_3/scripts/validate.py
+- segresnet_3/model/progress.yaml
+- segresnet_3/model/mlruns/363275139369804817/meta.yaml
+- segresnet_3/model/mlruns/363275139369804817/e7868356d2894d6985ddd1f18229ff85/meta.yaml
+- segresnet_3/model/mlruns/0/meta.yaml
+- segresnet_3/configs/hyper_parameters.yaml
+- segresnet_2/__init__.py
+- segresnet_2/docs/README.md
+- segresnet_2/scripts/__init__.py
+- segresnet_2/scripts/algo.py
+- segresnet_2/scripts/infer.py
+- segresnet_2/scripts/segmenter.py
+- segresnet_2/scripts/train.py
+- segresnet_2/scripts/utils.py
+- segresnet_2/scripts/validate.py
+- segresnet_2/model/progress.yaml
+- segresnet_2/model/mlruns/120681360772721002/meta.yaml
+- segresnet_2/model/mlruns/120681360772721002/215fd1683c514f59a3fd41f8138669f4/meta.yaml
+- segresnet_2/model/mlruns/0/meta.yaml
+- segresnet_2/configs/hyper_parameters.yaml
+- segresnet_4/__init__.py
+- segresnet_4/docs/README.md
+- segresnet_4/scripts/__init__.py
+- segresnet_4/scripts/algo.py
+- segresnet_4/scripts/infer.py
+- segresnet_4/scripts/segmenter.py
+- segresnet_4/scripts/train.py
+- segresnet_4/scripts/utils.py
+- segresnet_4/scripts/validate.py
+- segresnet_4/model/progress.yaml
+- segresnet_4/model/mlruns/609267487795769167/meta.yaml
+- segresnet_4/model/mlruns/609267487795769167/f80f88cde09646959bd3a6e1210adf46/meta.yaml
+- segresnet_4/model/mlruns/0/meta.yaml
+- segresnet_4/configs/hyper_parameters.yaml
+- segresnet_1/__init__.py
+- segresnet_1/docs/README.md
+- segresnet_1/scripts/__init__.py
+- segresnet_1/scripts/algo.py
+- segresnet_1/scripts/infer.py
+- segresnet_1/scripts/segmenter.py
+- segresnet_1/scripts/train.py
+- segresnet_1/scripts/utils.py
+- segresnet_1/scripts/validate.py
+- segresnet_1/model/progress.yaml
+- segresnet_1/model/mlruns/0/meta.yaml
+- segresnet_1/model/mlruns/111981617731962238/meta.yaml
+- segresnet_1/model/mlruns/111981617731962238/5b4149dc981b4b288fd3d7bea59497d6/meta.yaml
+- segresnet_1/configs/hyper_parameters.yaml
+- segresnet_0/__init__.py
+- segresnet_0/docs/README.md
+- segresnet_0/scripts/__init__.py
+- segresnet_0/scripts/algo.py
+- segresnet_0/scripts/infer.py
+- segresnet_0/scripts/segmenter.py
+- segresnet_0/scripts/train.py
+- segresnet_0/scripts/utils.py
+- segresnet_0/scripts/validate.py
+- segresnet_0/model/progress.yaml
+- segresnet_0/model/mlruns/334804129649520871/meta.yaml
+- segresnet_0/model/mlruns/334804129649520871/9aa683b0dd7d4799ae8c8183cd2f609f/meta.yaml
+- segresnet_0/model/mlruns/0/meta.yaml
+- segresnet_0/configs/hyper_parameters.yaml
+- algorithm_templates/dints/__init__.py
+- algorithm_templates/dints/docs/README.md
+- algorithm_templates/dints/scripts/__init__.py
+- algorithm_templates/dints/scripts/algo.py
+- algorithm_templates/dints/scripts/dummy_runner.py
+- algorithm_templates/dints/scripts/infer.py
+- algorithm_templates/dints/scripts/search.py
+- algorithm_templates/dints/scripts/train.py
+- algorithm_templates/dints/scripts/utils.py
+- algorithm_templates/dints/scripts/validate.py
+- algorithm_templates/dints/configs/hyper_parameters.yaml
+- algorithm_templates/dints/configs/hyper_parameters_search.yaml
+- algorithm_templates/dints/configs/network.yaml
+- algorithm_templates/dints/configs/network_search.yaml
+- algorithm_templates/dints/configs/transforms_infer.yaml
+- algorithm_templates/dints/configs/transforms_train.yaml
+- algorithm_templates/dints/configs/transforms_validate.yaml
+- algorithm_templates/swinunetr/__init__.py
+- algorithm_templates/swinunetr/docs/README.md
+- algorithm_templates/swinunetr/scripts/__init__.py
+- algorithm_templates/swinunetr/scripts/algo.py
+- algorithm_templates/swinunetr/scripts/dummy_runner.py
+- algorithm_templates/swinunetr/scripts/infer.py
+- algorithm_templates/swinunetr/scripts/train.py
+- algorithm_templates/swinunetr/scripts/validate.py
+- algorithm_templates/swinunetr/configs/hyper_parameters.yaml
+- algorithm_templates/swinunetr/configs/network.yaml
+- algorithm_templates/swinunetr/configs/transforms_infer.yaml
+- algorithm_templates/swinunetr/configs/transforms_train.yaml
+- algorithm_templates/swinunetr/configs/transforms_validate.yaml
+- algorithm_templates/segresnet2d/__init__.py
+- algorithm_templates/segresnet2d/docs/README.md
+- algorithm_templates/segresnet2d/scripts/__init__.py
+- algorithm_templates/segresnet2d/scripts/algo.py
+- algorithm_templates/segresnet2d/scripts/infer.py
+- algorithm_templates/segresnet2d/scripts/segmenter.py
+- algorithm_templates/segresnet2d/scripts/segmenter_2d.py
+- algorithm_templates/segresnet2d/scripts/train.py
+- algorithm_templates/segresnet2d/scripts/utils.py
+- algorithm_templates/segresnet2d/scripts/validate.py
+- algorithm_templates/segresnet2d/configs/hyper_parameters.yaml
+- algorithm_templates/segresnet/__init__.py
+- algorithm_templates/segresnet/docs/README.md
+- algorithm_templates/segresnet/scripts/__init__.py
+- algorithm_templates/segresnet/scripts/algo.py
+- algorithm_templates/segresnet/scripts/infer.py
+- algorithm_templates/segresnet/scripts/segmenter.py
+- algorithm_templates/segresnet/scripts/train.py
+- algorithm_templates/segresnet/scripts/utils.py
+- algorithm_templates/segresnet/scripts/validate.py
+- algorithm_templates/segresnet/configs/hyper_parameters.yaml
