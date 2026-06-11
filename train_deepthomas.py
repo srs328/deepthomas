@@ -71,15 +71,17 @@ PRINT_MONAI_CONFIG = False
 # Training
 # -----------------------------------------------------------------------------
 
-def run_auto3dseg(config: dict[str, Any], paths: dict[str, Path]) -> None:
+def run_auto3dseg(
+    config: dict[str, Any],
+    paths: dict[str, Path],
+    datalist_file: Path,
+) -> None:
     """Run MONAI Auto3DSeg training and ensemble inference.
 
     Auto3DSeg will train the model specified in the config file. Because the
     datalist contains a "fold" value for each training case, Auto3DSeg can use
     those fold values for cross-validation.
     """
-
-    datalist_file = create_datalist(config, paths)
 
     print(f"Using datalist file: {datalist_file}")
     print(f"Using dataroot:      {paths['dataroot']}")
@@ -123,21 +125,20 @@ def run_auto3dseg(config: dict[str, Any], paths: dict[str, Path]) -> None:
 # Inference
 # -----------------------------------------------------------------------------
 
-def run_inference(config: dict[str, Any], paths: dict[str, Path]) -> None:
+def run_inference(
+    config: dict[str, Any],
+    paths: dict[str, Path],
+    datalist_file: Path,
+) -> None:
     """Run ensemble inference using an existing trained model directory.
 
     This is useful if new images are added to imagesTs and you want to generate
     segmentation labels without retraining the model.
     """
-
-    datalist_file = create_datalist(
-        config, 
-        paths,
-        datalist_filename="inference-datalist.json",
-        force_recreate=True
-    )
+    
     work_dir = paths["work_dir"]
-    save_dir = paths["labelsTs_infer_dir"]
+    dataroot = paths['infer_dataroot']
+    save_dir = dataroot / paths["labelsTs_infer_dir"]
     save_dir.mkdir(parents=True, exist_ok=True)
 
     print(f"Using trained model directory: {work_dir}")
@@ -186,8 +187,9 @@ def run_inference(config: dict[str, Any], paths: dict[str, Path]) -> None:
 def create_datalist(
     config: dict[str, Any],
     paths: dict[str, Path],
+    inference: bool = False,
+    datalist_filename: str = "datalist.json",
     force_recreate: bool = False,
-    datalist_filename: str = "datalist.json"
 ) -> Path:
     """Create datalist.json for MONAI Auto3DSeg.
 
@@ -210,10 +212,13 @@ def create_datalist(
         print("Delete it, or run with --force-datalist, to recreate it.")
         return datalist_file
 
-    dataroot = paths["dataroot"]
-    labels_tr_dir = paths["labelsTr_dir"]
-    images_tr_dir = paths["imagesTr_dir"]
-    images_ts_dir = paths["imagesTs_dir"]
+    if inference:
+        dataroot = paths['infer_dataroot']
+    else:
+        dataroot = paths["dataroot"]
+    labels_tr_dir = dataroot / dataroot / paths["labelsTr_dir"]
+    images_tr_dir = dataroot / paths["imagesTr_dir"]
+    images_ts_dir = dataroot / paths["imagesTs_dir"]
 
     labels_tr = sorted(labels_tr_dir.glob("*.nii.gz"))
     images_tr = set(images_tr_dir.glob("*.nii.gz"))
@@ -223,65 +228,66 @@ def create_datalist(
     else:
         images_ts = []
 
-    if not labels_tr:
-        raise FileNotFoundError(f"No label files found in: {labels_tr_dir}")
-
-    if not images_tr:
-        raise FileNotFoundError(f"No image files found in: {images_tr_dir}")
-
     training_items: list[dict[str, Any]] = []
-    expected_images: set[Path] = set()
-    missing_images: list[tuple[Path, Path]] = []
+    if not inference:
+        if not labels_tr:
+            raise FileNotFoundError(f"No label files found in: {labels_tr_dir}")
 
-    for label in labels_tr:
-        case_name = label.name.removesuffix(".nii.gz")
-        image = images_tr_dir / f"{case_name}_0000.nii.gz"
-        expected_images.add(image)
+        if not images_tr:
+            raise FileNotFoundError(f"No image files found in: {images_tr_dir}")
 
-        if image not in images_tr:
-            missing_images.append((label, image))
-            continue
+        expected_images: set[Path] = set()
+        missing_images: list[tuple[Path, Path]] = []
 
-        # The datalist stores paths relative to dataroot. Auto3DSeg combines
-        # these relative paths with the dataroot path when it loads the files.
-        training_items.append(
-            {
-                "image": str(image.relative_to(dataroot)),
-                "label": str(label.relative_to(dataroot)),
-            }
-        )
+        for label in labels_tr:
+            case_name = label.name.removesuffix(".nii.gz")
+            image = images_tr_dir / f"{case_name}_0000.nii.gz"
+            expected_images.add(image)
 
-    if missing_images:
-        print("Found labels without matching images:")
-        for label, expected_image in missing_images:
-            print(f"  label:          {label}")
-            print(f"  expected image: {expected_image}")
+            if image not in images_tr:
+                missing_images.append((label, image))
+                continue
 
-        raise FileNotFoundError(
-            "Some training labels do not have matching images. "
-            "Please fix the dataset before training."
-        )
+            # The datalist stores paths relative to dataroot. Auto3DSeg combines
+            # these relative paths with the dataroot path when it loads the files.
+            training_items.append(
+                {
+                    "image": str(image.relative_to(dataroot)),
+                    "label": str(label.relative_to(dataroot)),
+                }
+            )
 
-    # This is a useful check for data organization mistakes. Extra images are
-    # not fatal, but they will not be used for training unless they have labels.
-    extra_images_tr = images_tr - expected_images
-    if extra_images_tr:
-        print(f"Found {len(extra_images_tr)} training image(s) without labels:")
-        for image in sorted(extra_images_tr):
-            print(f"  {image}")
+        if missing_images:
+            print("Found labels without matching images:")
+            for label, expected_image in missing_images:
+                print(f"  label:          {label}")
+                print(f"  expected image: {expected_image}")
 
-    # Assign fold numbers to each training item for cross-validation.
-    #
-    # Auto3DSeg can use this "fold" value during training:
-    #   - cases with fold == current fold become validation cases
-    #   - cases with fold != current fold become training cases
-    #
-    # We use a fixed seed so that the assignments are reproducible.
-    random_generator = random.Random(RANDOM_SEED)
-    random_generator.shuffle(training_items)
+            raise FileNotFoundError(
+                "Some training labels do not have matching images. "
+                "Please fix the dataset before training."
+            )
 
-    for index, item in enumerate(training_items):
-        item["fold"] = index % int(config["num_folds"])
+        # This is a useful check for data organization mistakes. Extra images are
+        # not fatal, but they will not be used for training unless they have labels.
+        extra_images_tr = images_tr - expected_images
+        if extra_images_tr:
+            print(f"Found {len(extra_images_tr)} training image(s) without labels:")
+            for image in sorted(extra_images_tr):
+                print(f"  {image}")
+
+        # Assign fold numbers to each training item for cross-validation.
+        #
+        # Auto3DSeg can use this "fold" value during training:
+        #   - cases with fold == current fold become validation cases
+        #   - cases with fold != current fold become training cases
+        #
+        # We use a fixed seed so that the assignments are reproducible.
+        random_generator = random.Random(RANDOM_SEED)
+        random_generator.shuffle(training_items)
+
+        for index, item in enumerate(training_items):
+            item["fold"] = index % int(config["num_folds"])
 
     testing_items = [
         {"image": str(image.relative_to(dataroot))}
@@ -329,33 +335,26 @@ def read_config(config_file: Path | str) -> tuple[dict[str, Any], dict[str, Path
         f"{config['model']}_{config['run_label']}"
     )
 
-    dataset_home = Path(raw_paths["dataset_home"])
+    datasets_home = Path(raw_paths["datasets_home"])
     work_home = Path(raw_paths["work_home"])
-    dataroot = dataset_home / f"dataset_{config['dataset_id']}"
+    dataroot = datasets_home / f"dataset_{config['dataset_id']}"
 
     paths = {
-        "dataset_home": dataset_home,
+        "datasets_home": datasets_home,
         "work_home": work_home,
         "work_dir": work_home / training_run_name,
         "main_model_work_dir": work_home / MAIN_MODEL_WORK_DIR_NAME,
         "dataroot": dataroot,
-        "imagesTr_dir": dataroot / "imagesTr",
-        "labelsTr_dir": dataroot / "labelsTr",
-        "imagesTs_dir": dataroot / "imagesTs",
-        "labelsTs_dir": dataroot / "labelsTs",
-        "labelsTs_infer_dir": dataroot / f"labelsTs_{config['model']}_{config['run_label']}",
-        "labelsTs_main_infer_dir": dataroot / f"labelsTs_{config['model']}_main",
+        "infer_dataroot": datasets_home / raw_paths['infer_dataset'],
+        "datalist_filename": "datalist.json",
+        "imagesTr_dir": "imagesTr",
+        "labelsTr_dir": "labelsTr",
+        "imagesTs_dir": "imagesTs",
+        "labelsTs_dir": "labelsTs",
+        "labelsTs_infer_dir": f"labelsTs_{config['model']}_{config['run_label']}",
     }
 
     paths["work_dir"].mkdir(parents=True, exist_ok=True)
-
-    for key in ["labelsTr_dir", "imagesTr_dir"]:
-        if not paths[key].exists():
-            raise FileNotFoundError(f"Expected directory does not exist: {paths[key]}")
-
-    if not paths["imagesTs_dir"].exists():
-        print(f"Warning: testing images directory does not exist: {paths['imagesTs_dir']}")
-        print("Training can still run, but inference needs imagesTs.")
 
     return config, paths
 
@@ -402,20 +401,18 @@ def build_arg_parser() -> argparse.ArgumentParser:
         choices=["train", "infer", "make-datalist"],
         help="What to do. Default is 'train'.",
     )
+    
+    parser.add_argument(
+        "--datalist-filename",
+        action="store",
+        help="Filename to save the datalist JSON file into (default: %(default)s).",
+        default="datalist.json"
+    )
 
     parser.add_argument(
         "--force-datalist",
         action="store_true",
         help="Recreate datalist.json even if it already exists.",
-    )
-
-    parser.add_argument(
-        "--use-main-model",
-        action="store_true",
-        help=(
-            "For inference, use training_work_dirs/"
-            f"{MAIN_MODEL_WORK_DIR_NAME} instead of the test run."
-        ),
     )
 
     return parser
@@ -432,19 +429,46 @@ def main() -> None:
 
     config_file = CONFIG_DIR / CONFIG_FILE
     config, paths = read_config(config_file)
-
-    if args.use_main_model:
-        paths["work_dir"] = paths["main_model_work_dir"]
-        paths["labelsTs_infer_dir"] = paths["labelsTs_main_infer_dir"]
+    paths["datalist_filename"] = args.datalist_filename
 
     if args.command == "make-datalist":
-        create_datalist(config, paths, force_recreate=args.force_datalist)
+        create_datalist(
+            config,
+            paths,
+            datalist_filename=args.datalist_filename,
+            force_recreate=args.force_datalist,
+        )
+
     elif args.command == "train":
-        if args.force_datalist:
-            create_datalist(config, paths, force_recreate=True)
-        run_auto3dseg(config, paths)
+        datalist_file = create_datalist(
+            config,
+            paths,
+            datalist_filename=args.datalist_filename,
+            force_recreate=args.force_datalist,
+        )
+
+        run_auto3dseg(
+            config,
+            paths,
+            datalist_file=datalist_file,
+        )
+
     elif args.command == "infer":
-        run_inference(config, paths)
+        
+        datalist_file = create_datalist(
+            config,
+            paths,
+            inference=True,
+            datalist_filename=f"inference-{args.datalist_filename}",
+            force_recreate=True,
+        )
+        print(datalist_file)
+        run_inference(
+            config,
+            paths,
+            datalist_file=datalist_file,
+        )
+
     else:
         raise ValueError(f"Unknown command: {args.command}")
 

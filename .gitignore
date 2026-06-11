@@ -50,6 +50,17 @@ training_work_dirs/**/mlruns/**/.trash/
 
 
 # -------------------------------
+# Undoing everything above, just ignore all that
+# -------------------------------
+
+# Ignore everything inside this folder
+training_work_dirs/*
+
+# Except for the README.md file
+!training_work_dirs/README.md
+!training_work_dirs/.bundle_structure_manifest.txt
+
+# -------------------------------
 # Local packaged archives
 # -------------------------------
 *.zip

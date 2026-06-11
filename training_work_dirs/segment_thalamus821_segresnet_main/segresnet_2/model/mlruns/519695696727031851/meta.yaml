@@ -1,6 +1,0 @@
-artifact_location: /home/srs-9/Projects/saranathan/training_work_dirs/segment_thalamus821_segresnet/segresnet_2/model/mlruns/519695696727031851
-creation_time: 1747369246761
-experiment_id: '519695696727031851'
-last_update_time: 1747369246761
-lifecycle_stage: active
-name: Auto3DSeg

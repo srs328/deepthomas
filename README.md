@@ -8,6 +8,8 @@ The package is designed so that everything lives in one project folder:
 ```text
 deepthomas/
 ├── README.md
+├── run_auto3dseg.py
+├── run_inference.py
 ├── train_deepthomas.py
 ├── requirements.txt
 ├── configs/
@@ -17,17 +19,18 @@ deepthomas/
 │       ├── imagesTr/
 │       ├── labelsTr/
 │       └── imagesTs/
-└── training_work_dirs/
-    └── segment_thalamus821_segresnet_orig/
+├── training_work_dirs/
+│   └── segment_thalamus821_segresnet_main/
+└── utils
+    └── summarize_datta.py
 ```
 
-The `data/` folder contains the training and testing data. The
-`training_work_dirs/` folder is where MONAI saves model training outputs.
+The `data/` folder stores datasets
+`training_work_dirs/` folder is where MONAI is told to save model training outputs.
 
 The included directory
-`training_work_dirs/segment_thalamus821_segresnet_orig/` is the copied original
-DeepTHOMAS model. You can use it later to run inference on new images without
-training a new model.
+`training_work_dirs/segment_thalamus821_segresnet_main/` is the copied original
+DeepTHOMAS model. It can be used for inference without having to run training again.
 
 ---
 
@@ -51,10 +54,6 @@ python -m venv .venv
 .venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 ```
-
-If you are using a lab workstation or cluster environment that already has
-MONAI installed, you may not need to create a new virtual environment. In that
-case, make sure the environment has the packages listed in `requirements.txt`.
 
 ---
 
@@ -88,6 +87,41 @@ The `_0000` means image channel 0. This is a common convention in MONAI and
 nnU-Net-style medical image segmentation datasets.
 
 The script checks that each label has a matching image before training starts.
+
+---
+
+## Running inference with the original model
+
+Running inference on new images only requires the `imagesTs` folder under a dataset folder in `data/` (e.g. `data/new_ood_data/imagesTs`). Image file naming can be more freeform here (i.e. `case_name_0000` is not enforced)
+If new images are added to:
+
+```text
+data/dataset_thalamus821/imagesTs/
+```
+
+you can run inference using the copied original DeepTHOMAS model:
+
+```bash
+python train_deepthomas.py infer --use-original-model
+```
+
+This uses:
+
+```text
+training_work_dirs/segment_thalamus821_segresnet_orig/
+```
+
+and saves outputs in:
+
+```text
+data/dataset_thalamus821/labelsTs_segresnet_orig/
+```
+
+Make sure new inference images follow the same naming convention:
+
+```text
+case_name_0000.nii.gz
+```
 
 ---
 
@@ -146,40 +180,6 @@ The datalist contains fold assignments for cross-validation. For this project,
 each training case gets a `fold` number. During Auto3DSeg training, cases from
 the current fold are used as validation cases, and cases from the other folds are
 used as training cases.
-
----
-
-## 5. Run inference with the original model
-
-If new images are added to:
-
-```text
-data/dataset_thalamus821/imagesTs/
-```
-
-you can run inference using the copied original DeepTHOMAS model:
-
-```bash
-python train_deepthomas.py infer --use-original-model
-```
-
-This uses:
-
-```text
-training_work_dirs/segment_thalamus821_segresnet_orig/
-```
-
-and saves outputs in:
-
-```text
-data/dataset_thalamus821/labelsTs_segresnet_orig/
-```
-
-Make sure new inference images follow the same naming convention:
-
-```text
-case_name_0000.nii.gz
-```
 
 ---
 
