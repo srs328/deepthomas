@@ -155,7 +155,7 @@ I configured this in the code as follows:
 - `output_dir` specifies where all the inference labels will be saved
 - If I don't set `data_root_dir`, then MONAI will save the output inside: `{output_dir}/imagesTs`
     - The images are stored in `{dataroot}/imagesTs`. By default, `data_root_dir` equals the path you set as `dataroot`. MONAI determines the final output folder by doing `output_dir/<image_location - data_root_dir>`. By default, the subtraction leaves behind "imagesTs" which was bugging me since I wanted my labels to be directly inside the folder I set as the `output_dir`
-
+    - that was very confusing and may not have made much sense, but its not important enough to worry about
 ```python
 ensemble_save_params = {
     "output_postfix": "infer",
