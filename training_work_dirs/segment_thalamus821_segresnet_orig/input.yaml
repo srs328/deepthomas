@@ -1,0 +1,5 @@
+name: task
+task: segmentation
+modality: MRI
+datalist: /home/srs-9/Projects/saranathan/kira_share/deepthomas/auto3dseg_bundles/segment_thalamus821_segresnet_orig/datalist.json
+dataroot: /home/srs-9/Projects/saranathan/kira_share/deepthomas/data/dataset_thalamus821

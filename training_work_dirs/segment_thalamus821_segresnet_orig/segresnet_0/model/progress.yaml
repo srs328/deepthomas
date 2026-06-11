@@ -1,0 +1,88 @@
+- {best_avg_dice_score_epoch: 0, best_avg_dice_score: 0.0001, save_time: 0.4724, time: 0.02
+    hr, train_time: 48.34s, validation_time: 16.79s, epoch_time: 65.15s, model: /home/srs-9/Projects/saranathan/training_work_dirs/segment_thalamus821_segresnet/segresnet_0/model/model.pt,
+  date: '2025-05-15 17:48:40'}
+- {best_avg_dice_score_epoch: 1, best_avg_dice_score: 0.0272, save_time: 0.3570, time: 0.03
+    hr, train_time: 35.85s, validation_time: 15.78s, epoch_time: 51.65s, model: /home/srs-9/Projects/saranathan/training_work_dirs/segment_thalamus821_segresnet/segresnet_0/model/model.pt,
+  date: '2025-05-15 17:49:32'}
+- {best_avg_dice_score_epoch: 2, best_avg_dice_score: 0.1363, save_time: 0.3514, time: 0.05
+    hr, train_time: 35.12s, validation_time: 15.63s, epoch_time: 50.77s, model: /home/srs-9/Projects/saranathan/training_work_dirs/segment_thalamus821_segresnet/segresnet_0/model/model.pt,
+  date: '2025-05-15 17:50:24'}
+- {best_avg_dice_score_epoch: 3, best_avg_dice_score: 0.1914, save_time: 0.3583, time: 0.06
+    hr, train_time: 34.99s, validation_time: 15.60s, epoch_time: 50.61s, model: /home/srs-9/Projects/saranathan/training_work_dirs/segment_thalamus821_segresnet/segresnet_0/model/model.pt,
+  date: '2025-05-15 17:51:15'}
+- {best_avg_dice_score_epoch: 4, best_avg_dice_score: 0.2224, save_time: 0.3699, time: 0.08
+    hr, train_time: 35.33s, validation_time: 15.69s, epoch_time: 51.04s, model: /home/srs-9/Projects/saranathan/training_work_dirs/segment_thalamus821_segresnet/segresnet_0/model/model.pt,
+  date: '2025-05-15 17:52:07'}
+- {best_avg_dice_score_epoch: 5, best_avg_dice_score: 0.3404, save_time: 0.3726, time: 0.09
+    hr, train_time: 35.46s, validation_time: 15.69s, epoch_time: 51.17s, model: /home/srs-9/Projects/saranathan/training_work_dirs/segment_thalamus821_segresnet/segresnet_0/model/model.pt,
+  date: '2025-05-15 17:52:58'}
+- {best_avg_dice_score_epoch: 9, best_avg_dice_score: 0.5813, save_time: 0.3530, time: 0.15
+    hr, train_time: 35.85s, validation_time: 15.96s, epoch_time: 51.83s, model: /home/srs-9/Projects/saranathan/training_work_dirs/segment_thalamus821_segresnet/segresnet_0/model/model.pt,
+  date: '2025-05-15 17:56:25'}
+- {best_avg_dice_score_epoch: 18, best_avg_dice_score: 0.7519, save_time: 0.3703,
+  time: 0.27 hr, train_time: 32.43s, validation_time: 14.48s, epoch_time: 46.93s,
+  model: /home/srs-9/Projects/saranathan/training_work_dirs/segment_thalamus821_segresnet/segresnet_0/model/model.pt,
+  date: '2025-05-15 18:03:43'}
+- {best_avg_dice_score_epoch: 30, best_avg_dice_score: 0.7542, save_time: 0.3607,
+  time: 0.43 hr, train_time: 32.52s, validation_time: 14.51s, epoch_time: 47.04s,
+  model: /home/srs-9/Projects/saranathan/training_work_dirs/segment_thalamus821_segresnet/segresnet_0/model/model.pt,
+  date: '2025-05-15 18:13:13'}
+- {best_avg_dice_score_epoch: 32, best_avg_dice_score: 0.7587, save_time: 0.3594,
+  time: 0.45 hr, train_time: 32.74s, validation_time: 14.64s, epoch_time: 47.39s,
+  model: /home/srs-9/Projects/saranathan/training_work_dirs/segment_thalamus821_segresnet/segresnet_0/model/model.pt,
+  date: '2025-05-15 18:14:49'}
+- {best_avg_dice_score_epoch: 34, best_avg_dice_score: 0.7715, save_time: 0.3668,
+  time: 0.48 hr, train_time: 32.60s, validation_time: 14.49s, epoch_time: 47.11s,
+  model: /home/srs-9/Projects/saranathan/training_work_dirs/segment_thalamus821_segresnet/segresnet_0/model/model.pt,
+  date: '2025-05-15 18:16:24'}
+- {best_avg_dice_score_epoch: 42, best_avg_dice_score: 0.7944, save_time: 0.3596,
+  time: 0.59 hr, train_time: 32.69s, validation_time: 14.49s, epoch_time: 47.21s,
+  model: /home/srs-9/Projects/saranathan/training_work_dirs/segment_thalamus821_segresnet/segresnet_0/model/model.pt,
+  date: '2025-05-15 18:22:45'}
+- {best_avg_dice_score_epoch: 51, best_avg_dice_score: 0.8065, save_time: 0.3605,
+  time: 0.71 hr, train_time: 32.59s, validation_time: 14.49s, epoch_time: 47.10s,
+  model: /home/srs-9/Projects/saranathan/training_work_dirs/segment_thalamus821_segresnet/segresnet_0/model/model.pt,
+  date: '2025-05-15 18:29:53'}
+- {best_avg_dice_score_epoch: 52, best_avg_dice_score: 0.8104, save_time: 0.3684,
+  time: 0.72 hr, train_time: 32.64s, validation_time: 14.50s, epoch_time: 47.16s,
+  model: /home/srs-9/Projects/saranathan/training_work_dirs/segment_thalamus821_segresnet/segresnet_0/model/model.pt,
+  date: '2025-05-15 18:30:41'}
+- {best_avg_dice_score_epoch: 54, best_avg_dice_score: 0.8224, save_time: 0.3665,
+  time: 0.74 hr, train_time: 32.59s, validation_time: 14.48s, epoch_time: 47.09s,
+  model: /home/srs-9/Projects/saranathan/training_work_dirs/segment_thalamus821_segresnet/segresnet_0/model/model.pt,
+  date: '2025-05-15 18:32:16'}
+- {best_avg_dice_score_epoch: 76, best_avg_dice_score: 0.8248, save_time: 0.3501,
+  time: 1.04 hr, train_time: 32.65s, validation_time: 14.48s, epoch_time: 47.14s,
+  model: /home/srs-9/Projects/saranathan/training_work_dirs/segment_thalamus821_segresnet/segresnet_0/model/model.pt,
+  date: '2025-05-15 18:49:41'}
+- {best_avg_dice_score_epoch: 82, best_avg_dice_score: 0.8269, save_time: 0.3547,
+  time: 1.11 hr, train_time: 32.57s, validation_time: 14.48s, epoch_time: 47.07s,
+  model: /home/srs-9/Projects/saranathan/training_work_dirs/segment_thalamus821_segresnet/segresnet_0/model/model.pt,
+  date: '2025-05-15 18:54:27'}
+- {best_avg_dice_score_epoch: 90, best_avg_dice_score: 0.8290, save_time: 0.3620,
+  time: 1.22 hr, train_time: 32.61s, validation_time: 14.51s, epoch_time: 47.14s,
+  model: /home/srs-9/Projects/saranathan/training_work_dirs/segment_thalamus821_segresnet/segresnet_0/model/model.pt,
+  date: '2025-05-15 19:00:48'}
+- {best_avg_dice_score_epoch: 104, best_avg_dice_score: 0.8318, save_time: 0.3667,
+  time: 1.40 hr, train_time: 32.51s, validation_time: 14.52s, epoch_time: 47.05s,
+  model: /home/srs-9/Projects/saranathan/training_work_dirs/segment_thalamus821_segresnet/segresnet_0/model/model.pt,
+  date: '2025-05-15 19:11:53'}
+- {best_avg_dice_score_epoch: 114, best_avg_dice_score: 0.8348, save_time: 0.3747,
+  time: 1.54 hr, train_time: 32.68s, validation_time: 14.49s, epoch_time: 47.19s,
+  model: /home/srs-9/Projects/saranathan/training_work_dirs/segment_thalamus821_segresnet/segresnet_0/model/model.pt,
+  date: '2025-05-15 19:19:48'}
+- {best_avg_dice_score_epoch: 125, best_avg_dice_score: 0.8394, save_time: 0.3524,
+  time: 1.68 hr, train_time: 32.44s, validation_time: 14.51s, epoch_time: 46.97s,
+  model: /home/srs-9/Projects/saranathan/training_work_dirs/segment_thalamus821_segresnet/segresnet_0/model/model.pt,
+  date: '2025-05-15 19:28:32'}
+- {best_avg_dice_score_epoch: 168, best_avg_dice_score: 0.8444, save_time: 0.3605,
+  time: 2.25 hr, train_time: 32.78s, validation_time: 14.53s, epoch_time: 47.33s,
+  model: /home/srs-9/Projects/saranathan/training_work_dirs/segment_thalamus821_segresnet/segresnet_0/model/model.pt,
+  date: '2025-05-15 20:02:35'}
+- {best_avg_dice_score_epoch: 169, best_avg_dice_score: 0.8496, save_time: 0.3662,
+  time: 2.26 hr, train_time: 32.71s, validation_time: 14.49s, epoch_time: 47.23s,
+  model: /home/srs-9/Projects/saranathan/training_work_dirs/segment_thalamus821_segresnet/segresnet_0/model/model.pt,
+  date: '2025-05-15 20:03:23'}
+- {best_avg_dice_score_epoch: 169, best_avg_dice_score: 0.8694, validation_time: 16.70s,
+  inverted_best_validation: true, time: 3.25 hr, model: /home/srs-9/Projects/saranathan/training_work_dirs/segment_thalamus821_segresnet/segresnet_0/model/model.pt,
+  date: '2025-05-15 21:02:19'}

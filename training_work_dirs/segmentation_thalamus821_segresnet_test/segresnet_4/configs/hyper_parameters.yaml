@@ -1,0 +1,74 @@
+_meta_: {}
+bundle_root: /home/srs-9/Projects/saranathan/kira_share/deepthomas/training_work_dirs/segmentation_thalamus821_segresnet_test/segresnet_4
+ckpt_path: $@bundle_root + '/model'
+mlflow_tracking_uri: $@ckpt_path + '/mlruns/'
+mlflow_experiment_name: Auto3DSeg
+data_file_base_dir: /home/srs-9/Projects/saranathan/kira_share/deepthomas/data/dataset_thalamus821
+data_list_file_path: /home/srs-9/Projects/saranathan/kira_share/deepthomas/training_work_dirs/segmentation_thalamus821_segresnet_test/datalist.json
+modality: mri
+fold: 4
+input_channels: 1
+output_classes: 41
+class_names: null
+class_index: null
+debug: false
+ckpt_save: true
+cache_rate: null
+roi_size: [144, 176, 96]
+auto_scale_allowed: true
+auto_scale_batch: true
+auto_scale_roi: false
+auto_scale_filters: false
+quick: false
+channels_last: true
+validate_final_original_res: true
+calc_val_loss: false
+amp: true
+log_output_file: null
+cache_class_indices: null
+early_stopping_fraction: 0.001
+determ: false
+orientation_ras: true
+crop_foreground: true
+learning_rate: 0.0002
+batch_size: 1
+num_images_per_batch: 1
+num_epochs: 20
+num_warmup_epochs: 1
+sigmoid: false
+resample: true
+resample_resolution: [0.7000000247747366, 0.699999988079071, 0.7000000064269039]
+crop_mode: ratio
+normalize_mode: meanstd
+intensity_bounds: [465.2747531959823, 2750.0547509286916]
+num_epochs_per_validation: 1
+num_epochs_per_saving: 1
+num_workers: 4
+num_steps_per_image: null
+num_crops_per_image: 1
+loss: {_target_: DiceCELoss, include_background: true, squared_pred: true, smooth_nr: 0,
+  smooth_dr: 1.0e-05, softmax: $not @sigmoid, sigmoid: $@sigmoid, to_onehot_y: $not
+    @sigmoid}
+optimizer: {_target_: torch.optim.AdamW, lr: '@learning_rate', weight_decay: 1.0e-05}
+network:
+  _target_: SegResNetDS
+  init_filters: 32
+  blocks_down: [1, 2, 2, 4, 4]
+  norm: INSTANCE_NVFUSER
+  in_channels: '@input_channels'
+  out_channels: '@output_classes'
+  dsdepth: 4
+finetune: {enabled: false, ckpt_name: $@bundle_root + '/model/model.pt'}
+validate: {enabled: false, ckpt_name: $@bundle_root + '/model/model.pt', output_path: $@bundle_root
+    + '/prediction_validation', save_mask: false, invert: true}
+infer: {enabled: false, ckpt_name: $@bundle_root + '/model/model.pt', output_path: $@bundle_root
+    + '/prediction_' + @infer#data_list_key, data_list_key: testing}
+anisotropic_scales: false
+spacing_median: [0.7000000247747366, 0.699999988079071, 0.7000000263066656]
+spacing_lower: [0.6845237966432363, 0.6409999330296842, 0.6409999430964859]
+spacing_upper: [1.2000000476837158, 1.0155999660491943, 1.0155999660491943]
+image_size_mm_median: [103.59999823570251, 132.687002737748, 74.3560000852585]
+image_size_mm_90: [114.9999984198492, 141.168395280838, 87.88750320672989]
+image_size: [164, 201, 125]
+name: segmentation_thalamus821
+task: segmentation

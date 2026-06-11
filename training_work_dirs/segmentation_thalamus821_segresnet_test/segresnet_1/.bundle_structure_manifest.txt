@@ -1,0 +1,55 @@
+MONAI Auto3Dseg Bundle Summary: segresnet_1
+Path: /home/srs-9/Projects/saranathan/kira_share/deepthomas/training_work_dirs/segmentation_thalamus821_segresnet_test/segresnet_1
+============================================================
+
+--- INTERNAL DIRECTORY TREE ---
+[D] segresnet_1/
+    ├── [File] __init__.py
+    [D] __pycache__/
+    [D] docs/
+        ├── [File] README.md
+    [D] scripts/
+        ├── [File] __init__.py
+        ├── [File] algo.py
+        ├── [File] infer.py
+        ├── [File] segmenter.py
+        ├── [File] train.py
+        ├── [File] utils.py
+        ├── [File] validate.py
+        [D] __pycache__/
+    [D] model/
+        ├── [File] progress.yaml
+        [D] mlruns/
+            [D] .trash/
+            [D] 0/
+                ├── [File] meta.yaml
+            [D] 111981617731962238/
+                ├── [File] meta.yaml
+                [D] 5b4149dc981b4b288fd3d7bea59497d6/
+                    ├── [File] meta.yaml
+                    [D] tags/
+                    [D] artifacts/
+                    [D] params/
+                    [D] metrics/
+                        [D] val/
+                        [D] val_class/
+                        [D] train/
+    [D] configs/
+        ├── [File] hyper_parameters.yaml
+
+============================================================
+--- KEY TRAINING CONFIGURATIONS & SCRIPTS ---
+- __init__.py
+- docs/README.md
+- scripts/__init__.py
+- scripts/algo.py
+- scripts/infer.py
+- scripts/segmenter.py
+- scripts/train.py
+- scripts/utils.py
+- scripts/validate.py
+- model/progress.yaml
+- model/mlruns/0/meta.yaml
+- model/mlruns/111981617731962238/meta.yaml
+- model/mlruns/111981617731962238/5b4149dc981b4b288fd3d7bea59497d6/meta.yaml
+- configs/hyper_parameters.yaml

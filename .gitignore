@@ -1,6 +1,71 @@
-training_work_dirs
+# =============================================================================
+# Project-specific ignores
+# =============================================================================
+
+# -------------------------------
+# Large medical imaging data
+# -------------------------------
+# The dataset may be packaged with the handoff folder, but we usually do not
+# want Git to track NIfTI images directly.
+*.nii
 *.nii.gz
 
+
+# -------------------------------
+# Large model/checkpoint files
+# -------------------------------
+# These are usually too large for normal Git history. If a model needs to be
+# shared, send it separately or use a release / cloud storage / Git LFS.
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.pickle
+
+
+# -------------------------------
+# MONAI / Auto3DSeg training outputs
+# -------------------------------
+# We DO want to track many Auto3DSeg-generated files for documentation:
+#
+#   training_work_dirs/.../scripts/
+#   training_work_dirs/.../configs/
+#   training_work_dirs/.../docs/
+#   training_work_dirs/.../model/progress.yaml
+#   training_work_dirs/.../model/mlruns/.../meta.yaml
+#   training_work_dirs/.../model/mlruns/.../params/
+#   training_work_dirs/.../model/mlruns/.../metrics/
+#
+# But we do NOT want to track large MLflow artifacts.
+training_work_dirs/**/mlruns/**/artifacts/
+
+# MLflow trash folders are not useful documentation.
+training_work_dirs/**/mlruns/**/.trash/
+
+
+# -------------------------------
+# TensorBoard / event logs
+# -------------------------------
+*tfevents*
+
+
+# -------------------------------
+# Local packaged archives
+# -------------------------------
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# You had this specific file listed before. The general *.zip pattern above
+# already covers it, but keeping it here is harmless and explicit.
+kira_share/deepthomas.zip
+
+
+# -------------------------------
+# Generated Auto3DSeg bundle cache/output
+# -------------------------------
+auto3dseg_bundles/
 # ---
 # Python template
 # ---

@@ -1,7 +1,7 @@
 # DeepTHOMAS Auto3DSeg training package
 
 This folder contains a small MONAI Auto3DSeg workflow for training and running
-DeepTHOMAS-style thalamus segmentation.
+DeepTHOMAS thalamus segmentation.
 
 The package is designed so that everything lives in one project folder:
 

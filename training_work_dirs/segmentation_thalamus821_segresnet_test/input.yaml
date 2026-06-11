@@ -1,0 +1,5 @@
+datalist: /home/srs-9/Projects/saranathan/kira_share/deepthomas/training_work_dirs/segmentation_thalamus821_segresnet_test/datalist.json
+dataroot: /home/srs-9/Projects/saranathan/kira_share/deepthomas/data/dataset_thalamus821
+modality: MRI
+name: segmentation_thalamus821
+task: segmentation

@@ -1,0 +1,49 @@
+- {best_avg_dice_score_epoch: 0, best_avg_dice_score: 0.0000, save_time: 0.2705, time: 0.02
+    hr, train_time: 39.77s, validation_time: 18.63s, epoch_time: 58.43s, model: /home/srs-9/Projects/saranathan/kira_share/deepthomas/training_work_dirs/segmentation_thalamus821_segresnet_test/segresnet_4/model/model.pt,
+  date: '2026-06-10 21:41:38'}
+- {best_avg_dice_score_epoch: 1, best_avg_dice_score: 0.0373, save_time: 0.3794, time: 0.03
+    hr, train_time: 36.59s, validation_time: 18.16s, epoch_time: 54.77s, model: /home/srs-9/Projects/saranathan/kira_share/deepthomas/training_work_dirs/segmentation_thalamus821_segresnet_test/segresnet_4/model/model.pt,
+  date: '2026-06-10 21:42:33'}
+- {best_avg_dice_score_epoch: 2, best_avg_dice_score: 0.1507, save_time: 0.3870, time: 0.05
+    hr, train_time: 36.58s, validation_time: 18.17s, epoch_time: 54.78s, model: /home/srs-9/Projects/saranathan/kira_share/deepthomas/training_work_dirs/segmentation_thalamus821_segresnet_test/segresnet_4/model/model.pt,
+  date: '2026-06-10 21:43:29'}
+- {best_avg_dice_score_epoch: 3, best_avg_dice_score: 0.2572, save_time: 0.3773, time: 0.06
+    hr, train_time: 36.57s, validation_time: 18.19s, epoch_time: 54.78s, model: /home/srs-9/Projects/saranathan/kira_share/deepthomas/training_work_dirs/segmentation_thalamus821_segresnet_test/segresnet_4/model/model.pt,
+  date: '2026-06-10 21:44:24'}
+- {best_avg_dice_score_epoch: 8, best_avg_dice_score: 0.2575, save_time: 0.3783, time: 0.14
+    hr, train_time: 36.66s, validation_time: 18.18s, epoch_time: 54.87s, model: /home/srs-9/Projects/saranathan/kira_share/deepthomas/training_work_dirs/segmentation_thalamus821_segresnet_test/segresnet_4/model/model.pt,
+  date: '2026-06-10 21:49:01'}
+- {best_avg_dice_score_epoch: 9, best_avg_dice_score: 0.3781, save_time: 0.3882, time: 0.15
+    hr, train_time: 36.57s, validation_time: 18.19s, epoch_time: 54.79s, model: /home/srs-9/Projects/saranathan/kira_share/deepthomas/training_work_dirs/segmentation_thalamus821_segresnet_test/segresnet_4/model/model.pt,
+  date: '2026-06-10 21:49:56'}
+- {best_avg_dice_score_epoch: 11, best_avg_dice_score: 0.3975, save_time: 0.3842,
+  time: 0.19 hr, train_time: 36.67s, validation_time: 18.21s, epoch_time: 54.90s,
+  model: /home/srs-9/Projects/saranathan/kira_share/deepthomas/training_work_dirs/segmentation_thalamus821_segresnet_test/segresnet_4/model/model.pt,
+  date: '2026-06-10 21:51:47'}
+- {best_avg_dice_score_epoch: 12, best_avg_dice_score: 0.5916, save_time: 0.3752,
+  time: 0.20 hr, train_time: 36.63s, validation_time: 18.18s, epoch_time: 54.84s,
+  model: /home/srs-9/Projects/saranathan/kira_share/deepthomas/training_work_dirs/segmentation_thalamus821_segresnet_test/segresnet_4/model/model.pt,
+  date: '2026-06-10 21:52:43'}
+- {best_avg_dice_score_epoch: 13, best_avg_dice_score: 0.6803, save_time: 0.3827,
+  time: 0.22 hr, train_time: 36.50s, validation_time: 18.24s, epoch_time: 54.76s,
+  model: /home/srs-9/Projects/saranathan/kira_share/deepthomas/training_work_dirs/segmentation_thalamus821_segresnet_test/segresnet_4/model/model.pt,
+  date: '2026-06-10 21:53:38'}
+- {best_avg_dice_score_epoch: 15, best_avg_dice_score: 0.7134, save_time: 0.3850,
+  time: 0.25 hr, train_time: 36.86s, validation_time: 18.20s, epoch_time: 55.08s,
+  model: /home/srs-9/Projects/saranathan/kira_share/deepthomas/training_work_dirs/segmentation_thalamus821_segresnet_test/segresnet_4/model/model.pt,
+  date: '2026-06-10 21:55:29'}
+- {best_avg_dice_score_epoch: 16, best_avg_dice_score: 0.7732, save_time: 0.3875,
+  time: 0.26 hr, train_time: 36.44s, validation_time: 18.19s, epoch_time: 54.66s,
+  model: /home/srs-9/Projects/saranathan/kira_share/deepthomas/training_work_dirs/segmentation_thalamus821_segresnet_test/segresnet_4/model/model.pt,
+  date: '2026-06-10 21:56:25'}
+- {best_avg_dice_score_epoch: 17, best_avg_dice_score: 0.7810, save_time: 0.3799,
+  time: 0.28 hr, train_time: 36.78s, validation_time: 18.21s, epoch_time: 55.01s,
+  model: /home/srs-9/Projects/saranathan/kira_share/deepthomas/training_work_dirs/segmentation_thalamus821_segresnet_test/segresnet_4/model/model.pt,
+  date: '2026-06-10 21:57:20'}
+- {best_avg_dice_score_epoch: 18, best_avg_dice_score: 0.7934, save_time: 0.3879,
+  time: 0.29 hr, train_time: 36.56s, validation_time: 18.20s, epoch_time: 54.78s,
+  model: /home/srs-9/Projects/saranathan/kira_share/deepthomas/training_work_dirs/segmentation_thalamus821_segresnet_test/segresnet_4/model/model.pt,
+  date: '2026-06-10 21:58:16'}
+- {best_avg_dice_score_epoch: 18, best_avg_dice_score: 0.8062, validation_time: 20.08s,
+  inverted_best_validation: true, time: 0.31 hr, model: /home/srs-9/Projects/saranathan/kira_share/deepthomas/training_work_dirs/segmentation_thalamus821_segresnet_test/segresnet_4/model/model.pt,
+  date: '2026-06-10 21:59:14'}

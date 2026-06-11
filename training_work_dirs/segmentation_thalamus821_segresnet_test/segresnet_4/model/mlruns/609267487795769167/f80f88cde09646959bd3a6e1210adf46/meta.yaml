@@ -1,0 +1,14 @@
+artifact_uri: /home/srs-9/Projects/saranathan/kira_share/deepthomas/training_work_dirs/segmentation_thalamus821_segresnet_test/segresnet_4/model/mlruns/609267487795769167/f80f88cde09646959bd3a6e1210adf46/artifacts
+end_time: 1781143154994
+entry_point_name: ''
+experiment_id: '609267487795769167'
+lifecycle_stage: active
+run_id: f80f88cde09646959bd3a6e1210adf46
+run_name: segresnet - fold4 - train
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1781142039595
+status: 3
+tags: []
+user_id: srs-9

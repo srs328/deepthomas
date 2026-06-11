@@ -1,0 +1,2 @@
+{analyze: true, datastats: /home/srs-9/Projects/saranathan/kira_share/deepthomas/training_work_dirs/segmentation_thalamus821_segresnet_test/datastats.yaml,
+  algo_gen: true, train: true}

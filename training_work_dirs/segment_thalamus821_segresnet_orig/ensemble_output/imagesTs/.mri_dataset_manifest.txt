@@ -1,0 +1,370 @@
+MRI Folder Manifest: /home/srs-9/Projects/saranathan/kira_share/deepthomas/training_work_dirs/segment_thalamus821_segresnet_orig/ensemble_output/imagesTs
+Total NIfTI Files: 61
+============================================================
+
+File: 102614_0000_ensemble.nii.gz
+  - Size: 0.05 MB
+  - Dimensions (Shape): (144, 191, 106)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.7), np.float32(0.7))
+  - Data Type: uint8
+----------------------------------------
+File: 105923_0000_ensemble.nii.gz
+  - Size: 0.05 MB
+  - Dimensions (Shape): (144, 183, 102)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.7), np.float32(0.7))
+  - Data Type: uint8
+----------------------------------------
+File: 108121_0000_ensemble.nii.gz
+  - Size: 0.04 MB
+  - Dimensions (Shape): (136, 179, 99)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.7), np.float32(0.7))
+  - Data Type: uint8
+----------------------------------------
+File: 108828_0000_ensemble.nii.gz
+  - Size: 0.05 MB
+  - Dimensions (Shape): (145, 189, 104)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.7), np.float32(0.7))
+  - Data Type: uint8
+----------------------------------------
+File: 111211_0000_ensemble.nii.gz
+  - Size: 0.05 MB
+  - Dimensions (Shape): (143, 183, 108)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.7), np.float32(0.7))
+  - Data Type: uint8
+----------------------------------------
+File: 111413_0000_ensemble.nii.gz
+  - Size: 0.05 MB
+  - Dimensions (Shape): (146, 194, 104)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.7), np.float32(0.7))
+  - Data Type: uint8
+----------------------------------------
+File: 118831_0000_ensemble.nii.gz
+  - Size: 0.05 MB
+  - Dimensions (Shape): (143, 184, 102)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.7), np.float32(0.7))
+  - Data Type: uint8
+----------------------------------------
+File: 128127_0000_ensemble.nii.gz
+  - Size: 0.05 MB
+  - Dimensions (Shape): (139, 185, 104)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.7), np.float32(0.7))
+  - Data Type: uint8
+----------------------------------------
+File: 129634_0000_ensemble.nii.gz
+  - Size: 0.05 MB
+  - Dimensions (Shape): (142, 188, 105)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.7), np.float32(0.7))
+  - Data Type: uint8
+----------------------------------------
+File: 131419_0000_ensemble.nii.gz
+  - Size: 0.04 MB
+  - Dimensions (Shape): (133, 175, 105)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.7), np.float32(0.7))
+  - Data Type: uint8
+----------------------------------------
+File: 133625_0000_ensemble.nii.gz
+  - Size: 0.05 MB
+  - Dimensions (Shape): (145, 194, 108)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.7), np.float32(0.7))
+  - Data Type: uint8
+----------------------------------------
+File: 145834_0000_ensemble.nii.gz
+  - Size: 0.05 MB
+  - Dimensions (Shape): (139, 185, 104)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.7), np.float32(0.7))
+  - Data Type: uint8
+----------------------------------------
+File: 148335_0000_ensemble.nii.gz
+  - Size: 0.05 MB
+  - Dimensions (Shape): (149, 182, 107)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.7), np.float32(0.7))
+  - Data Type: uint8
+----------------------------------------
+File: 150928_0000_ensemble.nii.gz
+  - Size: 0.05 MB
+  - Dimensions (Shape): (142, 190, 97)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.7), np.float32(0.7))
+  - Data Type: uint8
+----------------------------------------
+File: 153025_0000_ensemble.nii.gz
+  - Size: 0.05 MB
+  - Dimensions (Shape): (135, 183, 105)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.7), np.float32(0.7))
+  - Data Type: uint8
+----------------------------------------
+File: 154229_0000_ensemble.nii.gz
+  - Size: 0.04 MB
+  - Dimensions (Shape): (137, 175, 101)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.7), np.float32(0.7))
+  - Data Type: uint8
+----------------------------------------
+File: 154532_0000_ensemble.nii.gz
+  - Size: 0.05 MB
+  - Dimensions (Shape): (134, 201, 110)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.7), np.float32(0.7))
+  - Data Type: uint8
+----------------------------------------
+File: 1_S_0001_0000_ensemble.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (112, 137, 70)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: uint8
+----------------------------------------
+File: 1_S_0002_0000_ensemble.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (109, 131, 68)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0000001), np.float32(1.0), np.float32(1.0))
+  - Data Type: uint8
+----------------------------------------
+File: 1_S_0005_0000_ensemble.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (109, 135, 72)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: uint8
+----------------------------------------
+File: 1_S_0007_0000_ensemble.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (112, 125, 71)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0000001), np.float32(1.0))
+  - Data Type: uint8
+----------------------------------------
+File: 1_S_0009_0000_ensemble.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (106, 121, 70)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: uint8
+----------------------------------------
+File: 1_S_0031_0000_ensemble.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (103, 128, 68)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: uint8
+----------------------------------------
+File: 1_S_0032_0000_ensemble.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (108, 143, 81)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: uint8
+----------------------------------------
+File: 1_S_0034_0000_ensemble.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (103, 130, 67)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: uint8
+----------------------------------------
+File: 1_S_0035_0000_ensemble.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (106, 128, 73)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: uint8
+----------------------------------------
+File: 1_S_0038_0000_ensemble.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (108, 124, 66)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: uint8
+----------------------------------------
+File: 1_S_0039_0000_ensemble.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (116, 136, 75)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: uint8
+----------------------------------------
+File: 1_S_0041_0000_ensemble.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (111, 129, 76)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: uint8
+----------------------------------------
+File: CTRL026_0000_ensemble.nii.gz
+  - Size: 0.04 MB
+  - Dimensions (Shape): (144, 176, 92)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.6845239), np.float32(0.6845238), np.float32(0.7))
+  - Data Type: uint8
+----------------------------------------
+File: CTRL027_0000_ensemble.nii.gz
+  - Size: 0.05 MB
+  - Dimensions (Shape): (155, 195, 100)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.6845238), np.float32(0.6845238), np.float32(0.7))
+  - Data Type: uint8
+----------------------------------------
+File: CTRL028_0000_ensemble.nii.gz
+  - Size: 0.05 MB
+  - Dimensions (Shape): (143, 189, 100)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.6845238), np.float32(0.6845238), np.float32(0.7))
+  - Data Type: uint8
+----------------------------------------
+File: CTRL045_0000_ensemble.nii.gz
+  - Size: 0.05 MB
+  - Dimensions (Shape): (151, 182, 99)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.6845238), np.float32(0.6845238), np.float32(0.70000005))
+  - Data Type: uint8
+----------------------------------------
+File: LAB_S00043_0000_ensemble.nii.gz
+  - Size: 0.03 MB
+  - Dimensions (Shape): (135, 92, 126)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7031), np.float32(0.7031), np.float32(0.9999979))
+  - Data Type: uint8
+----------------------------------------
+File: LAB_S00057_0000_ensemble.nii.gz
+  - Size: 0.03 MB
+  - Dimensions (Shape): (152, 100, 130)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7031), np.float32(0.7031), np.float32(1.0))
+  - Data Type: uint8
+----------------------------------------
+File: LAB_S00217_0000_ensemble.nii.gz
+  - Size: 0.03 MB
+  - Dimensions (Shape): (150, 101, 142)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7031), np.float32(0.7031), np.float32(1.0))
+  - Data Type: uint8
+----------------------------------------
+File: LAB_S00435_0000_ensemble.nii.gz
+  - Size: 0.03 MB
+  - Dimensions (Shape): (153, 111, 131)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7031), np.float32(0.7031), np.float32(1.0000008))
+  - Data Type: uint8
+----------------------------------------
+File: LAB_S00439_0000_ensemble.nii.gz
+  - Size: 0.04 MB
+  - Dimensions (Shape): (155, 110, 139)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7031), np.float32(0.7031), np.float32(1.0))
+  - Data Type: uint8
+----------------------------------------
+File: LAB_S00479_0000_ensemble.nii.gz
+  - Size: 0.03 MB
+  - Dimensions (Shape): (138, 118, 134)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7031), np.float32(0.7031), np.float32(1.0))
+  - Data Type: uint8
+----------------------------------------
+File: LAB_S01731_0000_ensemble.nii.gz
+  - Size: 0.03 MB
+  - Dimensions (Shape): (157, 91, 136)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7031), np.float32(0.7031), np.float32(1.0))
+  - Data Type: uint8
+----------------------------------------
+File: S01092_0000_ensemble.nii.gz
+  - Size: 0.03 MB
+  - Dimensions (Shape): (143, 106, 141)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7031), np.float32(0.7031), np.float32(1.0))
+  - Data Type: uint8
+----------------------------------------
+File: S01122_0000_ensemble.nii.gz
+  - Size: 0.04 MB
+  - Dimensions (Shape): (147, 121, 139)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7031), np.float32(0.7031), np.float32(1.0))
+  - Data Type: uint8
+----------------------------------------
+File: S01187_0000_ensemble.nii.gz
+  - Size: 0.04 MB
+  - Dimensions (Shape): (151, 124, 144)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7031), np.float32(0.7031), np.float32(1.0))
+  - Data Type: uint8
+----------------------------------------
+File: case10_0000_ensemble.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (115, 139, 75)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: uint8
+----------------------------------------
+File: case11_0000_ensemble.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (116, 141, 66)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: uint8
+----------------------------------------
+File: case1_0000_ensemble.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (117, 143, 76)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: uint8
+----------------------------------------
+File: r01-sub10_0000_ensemble.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (104, 138, 69)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(0.99999994), np.float32(1.0))
+  - Data Type: uint8
+----------------------------------------
+File: r01-sub11_0000_ensemble.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (103, 138, 80)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(0.99999994), np.float32(1.0))
+  - Data Type: uint8
+----------------------------------------
+File: r01-sub12_0000_ensemble.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (110, 133, 74)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(0.99999994))
+  - Data Type: uint8
+----------------------------------------
+File: r01-sub13_0000_ensemble.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (104, 134, 97)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: uint8
+----------------------------------------
+File: r01-sub1_0000_ensemble.nii.gz
+  - Size: 0.02 MB
+  - Dimensions (Shape): (104, 140, 90)
+  - Voxel Spacing/TR (Zooms): (np.float32(1.0), np.float32(1.0), np.float32(1.0))
+  - Data Type: uint8
+----------------------------------------
+File: sub-0051_0000_ensemble.nii.gz
+  - Size: 0.06 MB
+  - Dimensions (Shape): (153, 211, 129)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.70000005), np.float32(0.641), np.float32(0.641))
+  - Data Type: uint8
+----------------------------------------
+File: sub-0052_0000_ensemble.nii.gz
+  - Size: 0.06 MB
+  - Dimensions (Shape): (146, 215, 148)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.641), np.float32(0.641))
+  - Data Type: uint8
+----------------------------------------
+File: sub-0053_0000_ensemble.nii.gz
+  - Size: 0.07 MB
+  - Dimensions (Shape): (151, 229, 161)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.641), np.float32(0.641))
+  - Data Type: uint8
+----------------------------------------
+File: sub-0054_0000_ensemble.nii.gz
+  - Size: 0.06 MB
+  - Dimensions (Shape): (155, 216, 131)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.6999999), np.float32(0.641), np.float32(0.641))
+  - Data Type: uint8
+----------------------------------------
+File: sub-0055_0000_ensemble.nii.gz
+  - Size: 0.06 MB
+  - Dimensions (Shape): (160, 215, 117)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.64100003), np.float32(0.64100003))
+  - Data Type: uint8
+----------------------------------------
+File: sub-0056_0000_ensemble.nii.gz
+  - Size: 0.06 MB
+  - Dimensions (Shape): (158, 210, 100)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.641), np.float32(0.641))
+  - Data Type: uint8
+----------------------------------------
+File: sub-0057_0000_ensemble.nii.gz
+  - Size: 0.06 MB
+  - Dimensions (Shape): (146, 212, 128)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.641), np.float32(0.641))
+  - Data Type: uint8
+----------------------------------------
+File: sub-0058_0000_ensemble.nii.gz
+  - Size: 0.06 MB
+  - Dimensions (Shape): (149, 213, 122)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.641), np.float32(0.641))
+  - Data Type: uint8
+----------------------------------------
+File: sub-0059_0000_ensemble.nii.gz
+  - Size: 0.06 MB
+  - Dimensions (Shape): (149, 215, 133)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.641), np.float32(0.64100003))
+  - Data Type: uint8
+----------------------------------------
+File: sub-0060_0000_ensemble.nii.gz
+  - Size: 0.05 MB
+  - Dimensions (Shape): (148, 198, 93)
+  - Voxel Spacing/TR (Zooms): (np.float32(0.7), np.float32(0.641), np.float32(0.641))
+  - Data Type: uint8
+----------------------------------------

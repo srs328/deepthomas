@@ -1,0 +1,9 @@
+artifact_location: /home/srs-9/Projects/saranathan/kira_share/deepthomas/training_work_dirs/segmentation_thalamus821_segresnet_test/segresnet_1/model/mlruns/0
+creation_time: 1781138811622
+effective_trace_archival_retention: null
+experiment_id: '0'
+last_update_time: 1781138811622
+lifecycle_stage: active
+name: Default
+trace_location: null
+workspace: default

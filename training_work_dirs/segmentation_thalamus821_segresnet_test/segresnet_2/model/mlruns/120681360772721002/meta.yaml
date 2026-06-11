@@ -1,0 +1,9 @@
+artifact_location: /home/srs-9/Projects/saranathan/kira_share/deepthomas/training_work_dirs/segmentation_thalamus821_segresnet_test/segresnet_2/model/mlruns/120681360772721002
+creation_time: 1781139881034
+effective_trace_archival_retention: null
+experiment_id: '120681360772721002'
+last_update_time: 1781139881034
+lifecycle_stage: active
+name: Auto3DSeg
+trace_location: null
+workspace: default

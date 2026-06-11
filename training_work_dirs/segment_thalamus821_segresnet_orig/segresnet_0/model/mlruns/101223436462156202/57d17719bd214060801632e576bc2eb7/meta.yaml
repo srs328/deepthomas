@@ -1,0 +1,15 @@
+artifact_uri: /home/srs-9/Projects/saranathan/training_work_dirs/segment_thalamus821_segresnet/segresnet_0/model/mlruns/101223436462156202/57d17719bd214060801632e576bc2eb7/artifacts
+end_time: 1747357339024
+entry_point_name: ''
+experiment_id: '101223436462156202'
+lifecycle_stage: active
+run_id: 57d17719bd214060801632e576bc2eb7
+run_name: segresnet - fold0 - train
+run_uuid: 57d17719bd214060801632e576bc2eb7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747345654935
+status: 3
+tags: []
+user_id: srs-9
